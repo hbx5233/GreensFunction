@@ -1,11 +1,10 @@
 # Makefile
-
-SRC = ./src 
-PROG = $(SRC)/greenmain.m 
-
+ 
+PROG = ./src/greenmain.m 
 
 figs: $(PROG)
+	mkdir Figs
 	matlab -nodesktop -nosplash -nodisplay < $(PROG) 
 
 clean:
-	rm  Figs/*.pdf
+	rm  -rf Figs
