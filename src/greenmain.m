@@ -68,7 +68,7 @@ set(gca,'yticklabel','');
 xlabel('t,sec');  
 %title('The component of G^H(2,0,0,t;0,0,10,0)'); 
 title('Johnson(1974)'); 
-print('../Figs/Johnson_fig2','-dpdf');
+print('./Figs/Johnson_fig2','-dpdf');
 
 %-------------------------calculate g(10,0,0,t;0,0,2,0)--------------------
 x1=10;
@@ -107,7 +107,7 @@ set(gca,'yticklabel','');
 xlabel('t,sec');  
 %title('The component of G^H(10,0,0,t;0,0,2,0)'); 
 title('Johnson(1974)'); 
-print('../Figs/Johnson_fig3','-dpdf');
+print('./Figs/Johnson_fig3','-dpdf');
 
 %----------------------calculate g(10,0,0,t;0,0,0.2,0)---------------------
 x1=10;
@@ -146,7 +146,7 @@ set(gca,'yticklabel','');
 xlabel('t,sec');  
 %title('The component of G^H(10,0,0,t;0,0,0.2,0)'); 
 title('Johnson(1974)'); 
-print('../Figs/Johnson_fig4','-dpdf');
+print('./Figs/Johnson_fig4','-dpdf');
 
 tt1=toc;                                           %end of timing
 display(strcat('total time£º',num2str(tt1),'sec'));%show total running time
